@@ -15,9 +15,7 @@ spec:
       containers:
         - name: hello-world
           image: busybox
-          command: command: command: ['sh', '-c', 'while true; do echo "$GREETING"; sleep 1; done']
-          env:
-            - name: GREETING
-              value: "Namaste from ArgoCD"
+          command: ['sh', '-c', 'while true; do echo "Hello World"; sleep 1; done']
+      
 
 
